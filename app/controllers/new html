@@ -1,0 +1,5 @@
+<h1>Create a new Recipe</h1>
+<p>Find me in app/views/recipes/new.html.erb</p>
+<def new
+@recipe = Recipe.new
+<end>

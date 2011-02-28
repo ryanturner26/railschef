@@ -1,0 +1,16 @@
+<h1>Welcome to RailsChef!</h1>
+
+<p><%= link_to "Create New Recipe", new_recipe_path %></p>
+
+<table>
+<tr>
+  <td>Title</td>
+  <td>Method</td>
+</tr>
+<% for recipe in @recipes do %>
+  <tr>
+    <td><%= h link_to "#{recipe.title}", recipe %></td>
+    <td><%= h recipe.method %></td>
+  </tr>
+<% end %>
+</table>

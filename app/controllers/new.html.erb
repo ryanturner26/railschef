@@ -1,0 +1,8 @@
+<h1>Create a New Recipe</h1>
+<% form_for @RECIPE DO |F|%>
+<p>Title</p>
+<p><%=f.text_field : title%></p>
+
+<p>Method</p>
+	<%=f.text_area :method %></p>
+	<p><%=f.submit "Create Recipe", :controller =>"recipes", :action => "create" %></p>
